@@ -15,6 +15,10 @@ https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-b
 - How strong is the correlation between vaccinations and cases For USA
 - How many will be administered by end of FY 21
 
+### Description of the communication protocols
+- zoom
+- slack
+
 ### Potential Steps
 - STEP 1 - Create DF 
 - 
