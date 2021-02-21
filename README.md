@@ -1,5 +1,20 @@
 # Final Project Group 3
 
+### Selected topic
+Covid data
+### Reason why we selected their topic 
+It's more relavent to what is happening currently across the globe
+### Description of their source of data
+Two datasets one from kaggle and other from CDC
+https://www.kaggle.com/gpreda/covid-world-vaccination-progress
+https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36
+
+### Questions we hope to answer with the data
+
+- At what rate are certain regions/countries getting vaccinated?
+- How strong is the correlation between vaccinations and cases For USA
+- How many will be administered by end of FY 21
+
 ### Potential Steps
 - STEP 1 - Create DF 
 - 
