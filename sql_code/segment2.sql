@@ -8,7 +8,13 @@ CREATE TABLE Vaccines (
     total_people_vaccindated_per_hundred INT NOT NULL,
     people_vacinated_per_hundred INT NOT NULL,
     people_fully_vaccinated_per_hundred INT NOT NULL,
-    vaccines VARCHAR(40)
+    vaccines VARCHAR(40),
+    PRIMARY KEY (date)
 
 
 );
+
+
+-- Creating table for USA Data
+
+
