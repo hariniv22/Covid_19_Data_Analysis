@@ -5,6 +5,8 @@ For this project, we decided to use Jupyter Notebook, Pandas and Python to read 
 ### Description of preliminary data processing
 
 The clean up of the data and the ETL 
+Where we got the data from and 
+I set up RDS on AWS and pg admin 
 
 ### Description of preliminary feature engineering and preliminary feature selection, including decision making process
 
