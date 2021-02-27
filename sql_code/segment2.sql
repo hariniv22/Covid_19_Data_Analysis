@@ -31,6 +31,6 @@ CREATE TABLE Cases(
 SELECT v.country
 INTO merged_dataset
 FROM Vaccines AS v
-FULL OUTER JOIN USA_Data as usa
-ON v.datse = usa.dates
-ORDER BY v.dates
+FULL OUTER JOIN Cases as c
+ON v.country = c.country
+ORDER BY v.country;
