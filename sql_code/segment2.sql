@@ -1,33 +1,34 @@
 -- Creating table for VacCines Datset
 CREATE TABLE Vaccines (
     country VARCHAR(40) NOT NULL,
-    iso_code VARCHAR(40) NOT NULL,
-    dates DATE NOT NULL,
-    total_vaccines INT NOT NULL,
+    total_vaccinations INT NOT NULL,
+    people_vaccinated INT NOT NULL,
+    people_fully_vaccinated INT NOT NULL,
     daily_vaccinations INT NOT NULL,
     total_people_vaccindated_per_hundred INT NOT NULL,
     people_vacinated_per_hundred INT NOT NULL,
     people_fully_vaccinated_per_hundred INT NOT NULL,
-    vaccines VARCHAR(40),
-    PRIMARY KEY (dates)
-
-
+    PRIMARY KEY (country)
 );
 
 
 -- Creating table for USA Data
 -- pending other columns we will use
-CREATE TABLE USA_Data(
-    dates DATE NOT NULL,
+CREATE TABLE Cases(
+    country VARCHAR(40),
+    new_cases INT NOT NULL,
+    new_deaths INT NOT NULL,
+    total_cases INT NOT NULL,
+    total_deaths INT NOT NULL,
 
-    FOREIGN KEY(dates) REFERENCES Vaccines(dates)
+    FOREIGN KEY(country) REFERENCES Vaccines(country)
 );
 
 
 
 -- Joining tables
 
-SELECT v.dates
+SELECT v.country
 INTO merged_dataset
 FROM Vaccines AS v
 FULL OUTER JOIN USA_Data as usa
