@@ -12,8 +12,7 @@ CREATE TABLE Vaccines (
 );
 
 
--- Creating table for USA Data
--- pending other columns we will use
+-- Creating table for Cases Data
 CREATE TABLE Cases(
     country VARCHAR(40),
     new_cases INT NOT NULL,
@@ -23,6 +22,7 @@ CREATE TABLE Cases(
 
     FOREIGN KEY(country) REFERENCES Vaccines(country)
 );
+
 
 
 
