@@ -9,17 +9,18 @@ CREATE TABLE Vaccines (
     people_vacinated_per_hundred INT NOT NULL,
     people_fully_vaccinated_per_hundred INT NOT NULL,
     vaccines VARCHAR(40),
-    PRIMARY KEY (date)
+    PRIMARY KEY (dates)
 
 
 );
 
 
 -- Creating table for USA Data
+-- pending other columns we will use
 CREATE TABLE USA_Data(
     dates DATE NOT NULL,
 
-    FOREIGN KEY(date) REFERENCES Vaccines(date)
+    FOREIGN KEY(dates) REFERENCES Vaccines(dates)
 );
 
 
