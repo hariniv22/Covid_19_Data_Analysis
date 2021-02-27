@@ -18,18 +18,20 @@ CREATE TABLE Cases(
     new_cases INT NOT NULL,
     new_deaths INT NOT NULL,
     total_cases INT NOT NULL,
-    total_deaths INT NOT NULL,
-    FOREIGN KEY(country) REFERENCES Vaccines(country)
+    total_deaths INT NOT NULL
 );
 
+SELECT * FROM cases;
+SELECT * FROM vaccines;
 
+drop table vaccines, cases;
 
 
 -- Joining tables
 
-SELECT v.country
-INTO merged_dataset
+SELECT *
+--INTO merged_dataset
 FROM Vaccines AS v
-FULL OUTER JOIN Cases as c
+INNER JOIN Cases as c
 ON v.country = c.country
 ORDER BY v.country;
