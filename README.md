@@ -4,9 +4,7 @@ For this project, we decided to use Jupyter Notebook, Pandas and Python to read 
 
 ### Description of preliminary data processing
 
-The clean up of the data and the ETL 
-Where we got the data from and 
-I set up RDS on AWS and pg admin 
+The process of preliminary data processing includes performing ETL on jupyter notebook to clean up our data and first loaded it into a csv file. Our data about covid vaccinations, cases and death is orignally from Kaggle. From there, we took our data loaded it into pg admin, and set up a RDS on AWS and ran our database through it. 
 
 ### Description of preliminary feature engineering and preliminary feature selection, including decision making process
 
@@ -18,9 +16,8 @@ Decision making comes with our analysis and the graphs we create
 
 ### How data was split into training and testing sets
 
-Training 75 percent of the data set and testing 
-We first had our y variable which is the number of people vaccinated by the end of the year 2021. Our x variable are total vaccinations, total vaccinations per the hundred, and people vaccinated per hundred.
+We ended up splitting up our x and our y, and taking 75 percent of the data set to train it and then took the rest rest of the 25 percent of our data to test it. We had our y variable which is the number of people vaccinated by the end of the year 2021. Our x variable are number of new cases and new deaths. 
 
 ### Explanation of model choice, including limitation and benefits 
 
-For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use the number of vaccinations that have been granted to each individual to predict the number and picked supervised learning because we know the outcome and what we want to predict
+For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use the number of vaccinations people recieved, number of deaths, and number of cases and create trends and correlations with the data. Overall, we picked supervised learning because we know the outcome and what we want to predict.
