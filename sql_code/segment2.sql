@@ -28,10 +28,12 @@ drop table vaccines, cases;
 
 
 -- Joining tables
-
-SELECT *
---INTO merged_dataset
+-- Merged dataset into cases_vaccines table
+CREATE TABLE cases_vaccines AS
+(SELECT v.country, v.total_vaccinations, v.people_vaccinated, v.people_fully_vaccinated, v.daily_vaccinations,
+		v.total_vaccinations_per_hundred, v.people_vaccinated_per_hundred, v.people_fully_vaccinated_per_hundred,
+		c.new_cases,c.new_deaths, c.total_cases, c.total_deaths
 FROM Vaccines AS v
 INNER JOIN Cases as c
 ON v.country = c.country
-ORDER BY v.country;
+ORDER BY v.country);
