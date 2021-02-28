@@ -69,7 +69,7 @@ One of the challenges that we faced with feature engineering is that because we 
 
 ### How data was split into training and testing sets
 
-We ended up splitting up our x and our y, and taking 75 percent of the data set to train our and then took the rest rest of the 25 percent of our data to test it. We had our y variable which is the number of people vaccinated by the end of the year 2021. Our x variable are number of new cases and new deaths. It is important to mention that the model looks a bit biased and scewed based on the smaller dataset we are working with and the number of 0 entries and there was no way to find the data. It probably should have said unknown. 
+We ended up splitting up our x and our y and taking 75 percent of the data set to train our and then took the rest rest of the 25 percent of our data to test it. We had our y variable which is the number of people vaccinated by the end of the year 2021. Our x variable are number of new cases and new deaths. It is also important to mention that the model looks a bit biased and scewed based on the smaller dataset we are working with and the number of 0 entries and there was no way to find the data. It probably should have said unknown. 
 
 ### Explanation of model choice, including limitation and benefits 
 
