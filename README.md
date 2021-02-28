@@ -21,9 +21,7 @@ https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-b
 
 ### Potential Steps
 - STEP 1 - Create DF 
-- 
 - STEP 2 -  Clean Datasets 
-
 - STEP 3 - Visualize Data
 - STEP 4 - CREATE ERD
 - STEP 5 - Merge Datasets using SQL ( INNER JOIN) using Country
