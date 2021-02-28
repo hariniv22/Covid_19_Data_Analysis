@@ -2,8 +2,15 @@
 
 ### Selected topic
 Covid data
+
+The Google Sludes presentation for this project can be found 
+here on [Google Slides](https://docs.google.com/presentation/d/1R6NoK6VatRhL9BzGuit1nTV8Zf-JTV8qRfew4igPopU/edit#slide=id.gc12a178845_0_155).
+
+
+
 ### Reason why we selected their topic 
 It's more relavent to what is happening currently across the globe
+
 ### Description of their source of data
 Two datasets one from kaggle and other from CDC
 https://www.kaggle.com/gpreda/covid-world-vaccination-progress
