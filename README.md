@@ -3,7 +3,7 @@
 ### Selected topic
 Covid data
 
-The Google Sludes presentation for this project can be found 
+The Google Slides presentation for this project can be found 
 here on [Google Slides](https://docs.google.com/presentation/d/1R6NoK6VatRhL9BzGuit1nTV8Zf-JTV8qRfew4igPopU/edit#slide=id.gc12a178845_0_155).
 
 
