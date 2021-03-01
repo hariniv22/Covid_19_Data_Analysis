@@ -55,4 +55,4 @@ We faced challenges such as having a restricted number of rows in our dataset, w
 
 ### Explanation of model choice, including limitation and benefits 
 
-For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use the number of vaccinations that have been granted to each individual to predict the number and picked supervised learning because we know the outcome and what we want to predict
+For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use use our current data that we have to accurately predict the number of vaccinations that are going to happen in the future. In the end, we know the outcome and what we want to predict from our data given.
