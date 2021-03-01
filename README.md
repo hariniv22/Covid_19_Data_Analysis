@@ -42,11 +42,11 @@ For this project, we decided to use Jupyter Notebook, Pandas and Python to read 
 
 ### Description of preliminary data processing
 
-Our preliminary data processing included the clean up of the data in jupyter notebook and ETL. We then exported the code into csv file and then ran it through Postgress and SQL. We then loaded the data into AWS using RDS and S3 buckets.
+The process of preliminary data processing includes performing ETL on jupyter notebook to clean up our data and first loaded it into a csv file. Our data about covid vaccinations, cases and death is orignally from Kaggle. From there, we took our data and loaded it into pg admin, and set up a RDS on AWS and ran our database through it. 
 
 ### Description of preliminary feature engineering and preliminary feature selection, including decision making process
 
-Our y variable is total number of vaccinations and our x values are going to be new deaths and new cases. We decided on these variables because it would be intteresting to see how the number of deaths and number of new cases impact our. One of the challenges that we are facing with preliminary feature engineering is that we are restricted to three features/variables such as 
+One of the challenges that we faced with feature engineering is that because we are lacking in diversity of features beyond the scope of number of deaths and cases of covid vaccination that it made it difficult for feature engineering. The dataset we did choose already were built in, and we would have created those if we had the accurate population numbers. Because a lot of our information about covid vaccinations is extracted from third world countries, some of the data is not updated to get it to a good point in time for each single data point. Our y variable is total number of vaccinations and our x values are going to be new deaths and new cases. We decided on these variables because it would be intteresting to see how the number of deaths and number of new cases impact our. 
 
 ### How data was split into training and testing sets
 
@@ -55,4 +55,4 @@ We faced challenges such as having a restricted number of rows in our dataset, w
 
 ### Explanation of model choice, including limitation and benefits 
 
-For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use use our current data that we have to accurately predict the number of vaccinations that are going to happen in the future. In the end, we know the outcome and what we want to predict from our data given.
+For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use the number of vaccinations people recieved, number of deaths, and number of cases and create trends and correlations with the data. Overall, we picked supervised learning because we know the outcome and what we want to predict.
