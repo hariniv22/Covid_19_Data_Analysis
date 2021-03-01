@@ -50,7 +50,7 @@ Our y variable is total number of vaccinations and our x values are going to be 
 
 ### How data was split into training and testing sets
 
-Our data was split into 75 percent of the data set and then we are testing the rest of the data. 
+Our data was split into training 75 percent of the data set and then we are testing the rest of the data. 
 We faced challenges such as having a restricted number of rows in our dataset, which made the pool of data to train and test small. Another challenge that we are faced is that because some third world countries may not be up to date with their coid vaccination data, we have a lot of 0s as our output which skews our data. 
 
 ### Explanation of model choice, including limitation and benefits 
