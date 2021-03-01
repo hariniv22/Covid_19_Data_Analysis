@@ -6,8 +6,6 @@ Covid data
 The Google Slides presentation for this project can be found 
 here on [Google Slides](https://docs.google.com/presentation/d/1R6NoK6VatRhL9BzGuit1nTV8Zf-JTV8qRfew4igPopU/edit#slide=id.gc12a178845_0_155).
 
-
-
 ### Reason why we selected their topic 
 It's more relavent to what is happening currently across the globe
 
@@ -28,9 +26,7 @@ https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-b
 
 ### Potential Steps
 - STEP 1 - Create DF 
-- 
-- STEP 2 -  Clean Datasets 
-
+- STEP 2 - Clean Datasets 
 - STEP 3 - Visualize Data
 - STEP 4 - CREATE ERD
 - STEP 5 - Merge Datasets using SQL ( INNER JOIN) using Country
@@ -46,20 +42,16 @@ For this project, we decided to use Jupyter Notebook, Pandas and Python to read 
 
 ### Description of preliminary data processing
 
-The clean up of the data and the ETL 
+Our preliminary data processing included the clean up of the data in jupyter notebook and ETL. We then exported the code into csv file and then ran it through Postgress and SQL. We then loaded the data into AWS using RDS and S3 buckets.
 
 ### Description of preliminary feature engineering and preliminary feature selection, including decision making process
 
-Future selection is about why we are picking these columns and what our x v
-daily vaccinations 
-x values and y values 
-Decision making comes with our analysis and the graphs we create 
-
+Our y variable is total number of vaccinations and our x values are going to be new deaths and new cases. We decided on these variables because it would be intteresting to see how the number of deaths and number of new cases impact our. One of the challenges that we are facing with preliminary feature engineering is that we are restricted to three features/variables such as 
 
 ### How data was split into training and testing sets
 
-Training 75 percent of the data set and testing 
-We first had our y variable which is the number of people vaccinated by the end of the year 2021. Our x variable are total vaccinations, total vaccinations per the hundred, and people vaccinated per hundred.
+Our data was split into 75 percent of the data set and then we are testing the rest of the data. 
+We faced challenges such as having a restricted number of rows in our dataset, which made the pool of data to train and test small. Another challenge that we are faced is that because some third world countries may not be up to date with their coid vaccination data, we have a lot of 0s as our output which skews our data. 
 
 ### Explanation of model choice, including limitation and benefits 
 
