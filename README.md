@@ -37,16 +37,23 @@ https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-b
 
 ### Technologies Used 
 
-For this project, we decided to use Jupyter Notebook, Pandas and Python to read in the csv files of covid data. In addition to reading in the files, we create the data frames and clean up the data. We then use the data frames to plot graphs and show the appropriate visualisations we want to demonstrate to show the connection between regions/countries and number of vaccinations. Then, we create the ERDs using postgress to create an overarching view as to which columns we want to match up and use between datasets. After, we merge the datasets using SQL by inner joining them through the column "countries". We then take the new dataset created through Postgress and export it into a csv file, and feed it into a machine learning model. In the end, we are going to use Tabelau to create our dashboard and make a powerpoint presentation.
-For this project, we decided to use Jupyter Notebook, Pandas and Python to read in the csv files of covid data. In addition to reading in the files, we create the data frames and clean up the data. We then use the data frames to plot graphs and show the appropriate visualisations we want to demonstrate to show the connection between cases and number of vaccinations. Then, we create the ERDs using postgress to create an overarching view as to which columns we want to match up and use between datasets. After, we merge the datasets using SQL by inner joining them through the column "date". We then take the new dataset created through Postgress and export it into a csv file, and feed it into a machine learning model. In the end, we are going to use Tabelau to create our dashboard and make a powerpoint presentation.
+- Use Jupyter Notebook, Pandas and Python to load in the data of covid case surveillance data from the CDC government website
+- Perform ETL by dropping the nan and missing values, deleting columns we dont need, and 
+- Create data frames and clean up the data 
+- Use data frames to plot graphs and pie charts and show the appropriate visualisations we want to demonstrate 
+- Create a database using AWS
+- Run our data through Postgress and connect the server to RDS on AWSusing the endpoint URL
+- Take the new dataset created through Postgress and export it into a csv file, and feed it into a machine learning model
+- Use Tabelau to create our dashboard and make a powerpoint presentation
+
 
 ### Description of preliminary data processing
 
-The process of preliminary data processing includes performing ETL on jupyter notebook to clean up our data and first loaded it into a csv file. Our data about covid vaccinations, cases and death is orignally from Kaggle. From there, we took our data and loaded it into pg admin, and set up a RDS on AWS and ran our database through it. 
+The process of preliminary data processing includes performing ETL on jupyter notebook to clean up our data and first loaded it into a csv file. We retrieved our data from the CDC government of covid surveillance data. We chose this dataset because it gives us a lot of information about  From there, we took our data and loaded it into pg admin, and set up a RDS on AWS and ran our database through it. 
 
 ### Description of preliminary feature engineering and preliminary feature selection, including decision making process
 
-One of the challenges that we faced with feature engineering is that because we are lacking in diversity of features beyond the scope of number of deaths and cases of covid vaccination that it made it difficult for feature engineering. The dataset we did choose already were built in, and we would have created those if we had the accurate population numbers. Because a lot of our information about covid vaccinations is extracted from third world countries, some of the data is not updated to get it to a good point in time for each single data point. Our y variable is total number of vaccinations and our x values are going to be new deaths and new cases. We decided on these variables because it would be intteresting to see how the number of deaths and number of new cases impact our. 
+One of the challenges that we faced with feature engineering is that because we are lacking in diversity of features beyond the scope of number of deaths and cases of covid vaccination that it made it difficult for feature engineering. The dataset we did choose already were built in, and we would have created those if we had the accurate population numbers. Because a lot of our information about covid vaccinations is extracted from third world countries, some of the data is not updated to get it to a good point in time for each single data point. Our y variable are deaths and the x variables are going to be age, sex, and preexisitng conditions. We decided on these variables because it would be intteresting to if these independent variables make an impact on our 
 
 ### How data was split into training and testing sets
 
@@ -55,4 +62,7 @@ We faced challenges such as having a restricted number of rows in our dataset, w
 
 ### Explanation of model choice, including limitation and benefits 
 
-For this machine learning project, we are deciding to use linear regression supervised learning to describe our data because we believe that we can use the number of vaccinations people recieved, number of deaths, and number of cases and create trends and correlations with the data. Overall, we picked supervised learning because we know the outcome and what we want to predict.
+For this machine learning project, we are deciding to use logistic regression supervised learning to describe our data because we believe that we can use the number of deaths, age, sex, and preexisting conditions to discover trends and correlations with the data. Overall, we picked supervised learning because we know the outcome and what we want to predict. Our limitations are that we are only able to visualize trends, but we aren't able to necessarily say that one variable has a direct impact on the y. 
+
+### Description of accuracy score 
+
