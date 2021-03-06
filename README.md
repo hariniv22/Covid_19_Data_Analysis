@@ -52,9 +52,6 @@ https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-b
 The process of preliminary data processing includes performing ETL on jupyter notebook to clean up our data and first loaded it into a csv file. We retrieved our data from the CDC government of covid surveillance data. We chose this dataset because it gives us a lot of information about  From there, we took our data and loaded it into pg admin, and set up a RDS on AWS and ran our database through it. 
 
 ### Description of preliminary feature engineering and preliminary feature selection, including decision making process
-
-One of the challenges that we faced with feature engineering is that because we are lacking in diversity of features beyond the scope of number of deaths and cases of covid vaccination that it made it difficult for feature engineering. The dataset we did choose already were built in, and we would have created those if we had the accurate population numbers. Because a lot of our information about covid vaccinations is extracted from third world countries, some of the data is not updated to get it to a good point in time for each single data point. Our y variable are deaths and the x variables are going to be age, sex, and preexisitng conditions. We decided on these variables because it would be intteresting to if these independent variables make an impact on our 
-
 - Since we are predicting a binary outcome patient died or not, we dropped the date columns as they had no value to the machine learning model.
 - Dropped Missing values in every column as they had no value.
 - Used LabelEncoder to enocode the categorical values into numerical features to use for the Machine Learning models.
@@ -70,6 +67,8 @@ One of the challenges that we faced with feature engineering is that because we 
  - Using features such as sex,	age_group,	race_ethnicity, hosp_yn, icu_yn, medcon
 
 #### Random Forest Classifier
+ - Random Forest Classifier to see if we can get a different accuracy score.
+ - Once pro is using the feature importance to see the importance of the features selected.
 
 ### Description of accuracy score 
 
