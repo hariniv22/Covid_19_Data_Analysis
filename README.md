@@ -65,7 +65,7 @@ One of the challenges that we faced with feature engineering is that because we 
 
 ### Explanation of model choice, including limitation and benefits 
 
-## Logistic Regression
+#### Logistic Regression
  - Using logistics regression since we are trying to predict a binary outcome, 0 (patient lived) or 1 (patient died).
  - 
 
