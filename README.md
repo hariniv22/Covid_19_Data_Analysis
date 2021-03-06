@@ -55,14 +55,19 @@ The process of preliminary data processing includes performing ETL on jupyter no
 
 One of the challenges that we faced with feature engineering is that because we are lacking in diversity of features beyond the scope of number of deaths and cases of covid vaccination that it made it difficult for feature engineering. The dataset we did choose already were built in, and we would have created those if we had the accurate population numbers. Because a lot of our information about covid vaccinations is extracted from third world countries, some of the data is not updated to get it to a good point in time for each single data point. Our y variable are deaths and the x variables are going to be age, sex, and preexisitng conditions. We decided on these variables because it would be intteresting to if these independent variables make an impact on our 
 
+- Since we are predicting a binary outcome patient died or not, we dropped the date columns as they had no value to the machine learning model.
+- Dropped Missing values in every column as they had no value.
+- Used LabelEncoder to enocode the categorical values into numerical features to use for the Machine Learning models.
+
 ### How data was split into training and testing sets
 
-Our data was split into training 75 percent of the data set and then we are testing the rest of the data. 
-We faced challenges such as having a restricted number of rows in our dataset, which made the pool of data to train and test small. Another challenge that we are faced is that because some third world countries may not be up to date with their coid vaccination data, we have a lot of 0s as our output which skews our data. 
+- We will be using the 80/20 rule.
 
 ### Explanation of model choice, including limitation and benefits 
 
-For this machine learning project, we are deciding to use logistic regression supervised learning to describe our data because we believe that we can use the number of deaths, age, sex, and preexisting conditions to discover trends and correlations with the data. Overall, we picked supervised learning because we know the outcome and what we want to predict. Our limitations are that we are only able to visualize trends, but we aren't able to necessarily say that one variable has a direct impact on the y. 
+## Logistic Regression
+ - Using logistics regression since we are trying to predict a binary outcome, 0 (patient lived) or 1 (patient died).
+ - 
 
 ### Description of accuracy score 
 
