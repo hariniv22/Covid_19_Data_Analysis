@@ -67,7 +67,9 @@ One of the challenges that we faced with feature engineering is that because we 
 
 #### Logistic Regression
  - Using logistics regression since we are trying to predict a binary outcome, 0 (patient lived) or 1 (patient died).
- - 
+ - Using features such as sex,	age_group,	race_ethnicity, hosp_yn, icu_yn, medcon
+
+#### Random Forest Classifier
 
 ### Description of accuracy score 
 
