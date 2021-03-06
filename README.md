@@ -67,8 +67,14 @@ The process of preliminary data processing includes performing ETL on jupyter no
  - Using features such as sex,	age_group,	race_ethnicity, hosp_yn, icu_yn, medcon
 
 #### Random Forest Classifier
+ - Reliable ensemble maching learning model that uses mutiple Decisio Trees.
  - Random Forest Classifier to see if we can get a different accuracy score.
  - Once pro is using the feature importance to see the importance of the features selected.
+
+#### Decision Tree Model
+ - Simple machine learning module, clear representation.
+ - 
+ - 
 
 ### Description of accuracy score 
 
