@@ -65,19 +65,28 @@ The process of preliminary data processing includes performing ETL on jupyter no
 #### Logistic Regression
  - Using logistics regression since we are trying to predict a binary outcome, 0 (patient lived) or 1 (patient died).
  - Using features such as sex,	age_group,	race_ethnicity, hosp_yn, icu_yn, medcon
-
+ - A benefit is this model is easy to implement.
+ - A limitation is multiple features are needed for a model. 
 #### Random Forest Classifier
  - Reliable ensemble maching learning model that uses mutiple Decisio Trees.
  - Random Forest Classifier to see if we can get a different accuracy score.
  - Once pro is using the feature importance to see the importance of the features selected.
-
+ - Another benefit is it is suitable for large datasets.
+ - A random forest is prone to overfitting. 
+ - Our model can be biased towad variables with more levels.
+ 
 ##### Feature Importance 
 ![line_image](Resources/feat_imp.png)
-- 
+
+- One of the benefits from using a random forest is using the above function to easily visualize our 
+- Above shows the best features fo the Random Forest. 
+- If we wanted to make our machine learning model better we could drop the less important feature.
+
 #### Decision Tree Model
+ - Decision Tree model was used from segment 3 to segment 3 to see the difference between a Random Forest and Decision Tree.
  - Simple machine learning module, clear representation.
- - 
- - 
+ - Like Random Forest model is prone to Overfitting.
+ - Since it only uses one root node and then splits after that, it wont be as beneficial as a Random Forest.
 
 ### Description of accuracy score 
 
