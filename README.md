@@ -78,3 +78,6 @@ The process of preliminary data processing includes performing ETL on jupyter no
 
 ### Description of accuracy score 
 
+![line_image](Resources/model_scores.png)
+
+- As seen from the image above our best model was Random Forest.
