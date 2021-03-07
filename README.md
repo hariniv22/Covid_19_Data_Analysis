@@ -71,6 +71,9 @@ The process of preliminary data processing includes performing ETL on jupyter no
  - Random Forest Classifier to see if we can get a different accuracy score.
  - Once pro is using the feature importance to see the importance of the features selected.
 
+##### Feature Importance 
+![line_image](Resources/feat_imp.png)
+- 
 #### Decision Tree Model
  - Simple machine learning module, clear representation.
  - 
