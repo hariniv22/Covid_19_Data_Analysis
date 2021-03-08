@@ -1,7 +1,19 @@
+ ![Header](covid_19.png) 
+ 
 # Final Project Group 3
 
-### Selected topic
-Covid data
+
+ 
+
+
+
+
+### Overview
+Covid-19 caused a global pandemic so this data is  relevant to what is happening across the globe. 
+
+
+
+
 
 The Google Slides presentation for this project can be found 
 here on [Google Slides](https://docs.google.com/presentation/d/1R6NoK6VatRhL9BzGuit1nTV8Zf-JTV8qRfew4igPopU/edit#slide=id.gc12a178845_0_155).
