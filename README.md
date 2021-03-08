@@ -6,19 +6,21 @@ Covid data
 The Google Slides presentation for this project can be found 
 here on [Google Slides](https://docs.google.com/presentation/d/1R6NoK6VatRhL9BzGuit1nTV8Zf-JTV8qRfew4igPopU/edit#slide=id.gc12a178845_0_155).
 
-### Reason why we selected their topic 
+### Reason why we selected the topic 
 It's more relavent to what is happening currently across the globe
 
-### Description of their source of data
-Two datasets one from kaggle and other from CDC
-https://www.kaggle.com/gpreda/covid-world-vaccination-progress
-https://data.cdc.gov/Case-Surveillance/United-States-COVID-19-Cases-and-Deaths-by-State-o/9mfq-cb36
+### Description of the source of data
+Two datasets are
+- https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf
+- https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25
+
 
 ### Questions we hope to answer with the data
 
-- At what rate are certain regions/countries getting vaccinated?
-- How strong is the correlation between vaccinations and cases For USA
-- How many will be administered by end of FY 21
+1.   Correlation between ethnic groups and covid related deaths. 
+2. Distribution of hospitalization by age group.
+3.  Use ML model to predict the probability of a person dying from covid based on sex, age, ethnicity, underlying medical conidtion, hospitlization and  intensive care unit.
+
 
 ### Description of the communication protocols
 - zoom
