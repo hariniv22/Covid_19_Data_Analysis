@@ -1,4 +1,4 @@
- ![_Header_](covid_19.png) 
+ ![](covid_19.png) 
  
 # Final Project Group 3
 
