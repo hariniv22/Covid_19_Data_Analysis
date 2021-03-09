@@ -3,7 +3,7 @@
 # Final Project Group 3
 
 
-  ![](covid_header.jpg) 
+  ![](Resources/covid_header.jpg) 
 
 
 
