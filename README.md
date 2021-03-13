@@ -27,8 +27,8 @@ It's relavent to what is happening currently across the globe. The trends may pr
 ### Description of the source of data
 Two datasets are linked below:
 
-- [Source 1] (https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
-- [Source 2] (https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
+- [Source 1](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
+- [Source 2](https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
 
 Source 1 is surveillance  data provided by the CDC. While source 2 is data on population distrbution by ethnic group.   
  
