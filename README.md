@@ -37,7 +37,7 @@ Source 1 is surveillance  data provided by the CDC. While source 2 is data on po
 
 ### Insights we hope to derive with the data
 
-1.   Correlation between ethnic groups and covid related deaths. 
+1. Correlation between ethnic groups and covid related deaths. 
 2. Distribution of hospitalization by age group.
 3.  Use ML model to predict the probability of a person dying from covid based on sex, age, ethnicity, underlying medical conidtion, hospitlization and  intensive care unit.
 
@@ -117,6 +117,18 @@ After merging the data via inner join on ethnicity. The new merged dataset is st
 - As see from our Classification Reports all of our models scored better when predicting a patient to live as our precision,recall and f-1 score was around 90% percent but we had lower scores on the prediction of a patient dying.
 
 ![](Resources/classification.png)
+
+### Results 
+
+![](Resources/age.png)
+
+- Per the charts, Covid-19 is primarily fatal to the elder age groups. 
+
+![](Resources/ethnic.png) 
+
+
+
+
 
 ### Description of the communication protocols
 - zoom
