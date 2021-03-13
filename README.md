@@ -32,9 +32,14 @@ Two datasets are linked below:
 
 Source 1 is surveillance  data provided by the CDC. While source 2 is data on population distrbution by ethnic group.   
  
+### DataBase 
+After merging the data via inner join on ethnicity. The new merged dataset is stored in PostgreSQL and hosted by AWS. The Schema and examples of the tables used in Postegre are inclued below.
+
+ SCHEMA:
+ ![](Resources/ERD.png)
 
 
-### Questions we hope to answer with the data
+### Insights we hope to derive with the data
 
 1.   Correlation between ethnic groups and covid related deaths. 
 2. Distribution of hospitalization by age group.
