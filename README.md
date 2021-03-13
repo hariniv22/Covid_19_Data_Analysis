@@ -1,6 +1,6 @@
 
  
-# Final Project Group 3
+## COVID-19 Insights 
 
 
   ![](Resources/covid_header.jpg) 
@@ -27,16 +27,12 @@ It's relavent to what is happening currently across the globe. The trends may pr
 ### Description of the source of data
 Two datasets are linked below:
 
-- [Source 1](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
-- [Source 2](https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
+- [Source 1] (https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
+- [Source 2] (https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
 
 Source 1 is surveillance  data provided by the CDC. While source 2 is data on population distrbution by ethnic group.   
  
-### DataBase 
-After merging the data via inner join on ethnicity. The new merged dataset is stored in PostgreSQL and hosted by AWS. The Schema and examples of the tables used in Postegre are inclued below.
 
- SCHEMA:
- ![](Resources/ERD.png)
 
 
 ### Insights we hope to derive with the data
@@ -46,47 +42,44 @@ After merging the data via inner join on ethnicity. The new merged dataset is st
 3.  Use ML model to predict the probability of a person dying from covid based on sex, age, ethnicity, underlying medical conidtion, hospitlization and  intensive care unit.
 
 
-### Description of the communication protocols
-- zoom
-- slack
 
-### Potential Steps
-- STEP 1 - Create DF 
-- STEP 2 - Clean Datasets 
-- STEP 3 - Visualize Data
-- STEP 4 - CREATE ERD
-- STEP 5 - Merge Datasets using SQL ( INNER JOIN) using Country
-- STEP 6 - Export to CSV
-- STEP 7 - Feed into ML for question 3
-- STEP 8 - Dashboard
-- STEP 9 - Work On Presentation
+# Data Analysis
 
-### Technologies Used 
+![](Resources/end-to-end.png)
+
+### Data Processing
 
 - Use Jupyter Notebook, Pandas and Python to load in the data of covid case surveillance data from the CDC government website
-- Perform ETL by dropping the nan and missing values, deleting columns we dont need, and 
-- Create data frames and clean up the data 
+- Perform data clean up by dropping the nan and missing values
+- Create data frames
 - Use data frames to plot graphs and pie charts and show the appropriate visualisations we want to demonstrate 
 - Create a database using AWS
-- Run our data through Postgress and connect the server to RDS on AWSusing the endpoint URL
+- Run our data through Postgress and connect the server to RDS on AWS using the endpoint URL
 - Take the new dataset created through Postgress and export it into a csv file, and feed it into a machine learning model
 - Use Tabelau to create our dashboard and make a powerpoint presentation
 
+### DataBase 
+After merging the data via inner join on ethnicity. The new merged dataset is stored in PostgreSQL and hosted by AWS. The schema and examples of the tables used in PostgreSQL are inclued below.
 
-### Description of preliminary data processing
+ SCHEMA:
+ ![](Resources/ERD.png)
+ 
+ PostgreSQL:
+ ![](Resources/sql_code.png)
 
-The process of preliminary data processing includes performing ETL on jupyter notebook to clean up our data and first loaded it into a csv file. We retrieved our data from the CDC government of covid surveillance data. We chose this dataset because it gives us a lot of information about  From there, we took our data and loaded it into pg admin, and set up a RDS on AWS and ran our database through it. 
+### Machine Learning
 
-### Description of preliminary feature engineering and preliminary feature selection, including decision making process
+
+### 1. Description of preliminary feature engineering and preliminary feature selection, including decision making process
 - Since we are predicting a binary outcome patient died or not, we dropped the date columns as they had no value to the machine learning model.
 - Dropped Missing values in every column as they had no value.
 - Used LabelEncoder to enocode the categorical values into numerical features to use for the Machine Learning models.
 
-### How data was split into training and testing sets
+### 2. How data was split into training and testing sets
 
 - We will be using the 80/20 rule.
 
-### Explanation of model choice, including limitation and benefits 
+### 3. Explanation of model choice, including limitation and benefits 
 
 #### Logistic Regression
  - Using logistics regression since we are trying to predict a binary outcome, 0 (patient lived) or 1 (patient died).
@@ -116,6 +109,14 @@ The process of preliminary data processing includes performing ETL on jupyter no
 
 ### Description of accuracy score 
 
+- As seen from the image below our best model was Random Forest.
 ![line_image](Resources/model_scores.png)
 
-- As seen from the image above our best model was Random Forest.
+- As see from our Classification Reports all of our models scored better when predicting a patient to live as our precision,recall and f-1 score was around 90% percent but we had lower scores on the prediction of a patient dying.
+
+![](Resources/classification.png)
+
+### Description of the communication protocols
+- zoom
+- slack
+
