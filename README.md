@@ -18,13 +18,20 @@ Covid-19 caused a global pandemic so this data is  relevant to what is happening
 The Google Slides presentation for this project can be found 
 here on [Google Slides](https://docs.google.com/presentation/d/1R6NoK6VatRhL9BzGuit1nTV8Zf-JTV8qRfew4igPopU/edit#slide=id.gc12a178845_0_155).
 
+The interactive dashboard can be found here. 
+[Dashboard](https://public.tableau.com/profile/arshi.singh#!/vizhome/Final_Dashboard_Covid_19/StoryofCovid?publish=yes)
+
 ### Reason why we selected the topic 
-It's more relavent to what is happening currently across the globe
+It's relavent to what is happening currently across the globe. The trends may provide insight on how this pandemic will play out moving forward in 2021.
 
 ### Description of the source of data
-Two datasets are
-- https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf
-- https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25
+Two datasets are linked below:
+
+- [Source 1](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
+- [Source 2](https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
+
+Source 1 is surveillance  data provided by the CDC. While source 2 is data on population distrbution by ethnic group.   
+ 
 
 
 ### Questions we hope to answer with the data
