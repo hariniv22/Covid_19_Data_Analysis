@@ -61,10 +61,10 @@ Source 1 is surveillance  data provided by the CDC. While source 2 is data on po
 ### DataBase 
 After merging the data via inner join on ethnicity. The new merged dataset is stored in PostgreSQL and hosted by AWS. The schema and examples of the tables used in PostgreSQL are inclued below.
 
- SCHEMA:
+ 
  ![](Resources/ERD.png)
  
- PostgreSQL:
+ 
  ![](Resources/sql_code.png)
 
 ### Machine Learning
@@ -110,6 +110,8 @@ After merging the data via inner join on ethnicity. The new merged dataset is st
 ### Description of accuracy score 
 
 - As seen from the image below our best model was Random Forest.
+
+ 
 ![line_image](Resources/model_scores.png)
 
 - As see from our Classification Reports all of our models scored better when predicting a patient to live as our precision,recall and f-1 score was around 90% percent but we had lower scores on the prediction of a patient dying.
