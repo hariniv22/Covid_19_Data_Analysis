@@ -27,8 +27,8 @@ It's relavent to what is happening currently across the globe. The trends may pr
 ### Description of the source of data
 Two datasets are linked below:
 
-- [Source 1] (https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
-- [Source 2] (https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
+- [Source 1](https://data.cdc.gov/Case-Surveillance/COVID-19-Case-Surveillance-Public-Use-Data/vbim-akqf)
+- [Source 2](https://www.visualcapitalist.com/visualizing-u-s-population-by-race/#:~:text=As%20of%202019%2C%20here%20is,Black%3A%2012.2%25)
 
 Source 1 is surveillance  data provided by the CDC. While source 2 is data on population distrbution by ethnic group.   
  
@@ -61,10 +61,10 @@ Source 1 is surveillance  data provided by the CDC. While source 2 is data on po
 ### DataBase 
 After merging the data via inner join on ethnicity. The new merged dataset is stored in PostgreSQL and hosted by AWS. The schema and examples of the tables used in PostgreSQL are inclued below.
 
- SCHEMA:
+ 
  ![](Resources/ERD.png)
  
- PostgreSQL:
+ 
  ![](Resources/sql_code.png)
 
 ### Machine Learning
@@ -110,6 +110,8 @@ After merging the data via inner join on ethnicity. The new merged dataset is st
 ### Description of accuracy score 
 
 - As seen from the image below our best model was Random Forest.
+
+ 
 ![line_image](Resources/model_scores.png)
 
 - As see from our Classification Reports all of our models scored better when predicting a patient to live as our precision,recall and f-1 score was around 90% percent but we had lower scores on the prediction of a patient dying.
