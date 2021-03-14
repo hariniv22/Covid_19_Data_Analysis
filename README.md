@@ -47,17 +47,14 @@ Source 1 is surveillance  data provided by the CDC. While source 2 is data on po
 
 ![](Resources/end-to-end.png)
 
-### Data Processing
+### Data Processing and end-to-end workflow
 
-- Use Jupyter Notebook, Pandas and Python to load in the data of covid case surveillance data from the CDC government website
-- Perform data clean up by dropping the nan and missing values
-- Create data frames
-- Use data frames to plot graphs and pie charts and show the appropriate visualisations we want to demonstrate 
-- Create a database using AWS
-- Run our data through Postgress and connect the server to RDS on AWS using the endpoint URL
-- Take the new dataset created through Postgress and export it into a csv file, and feed it into a machine learning model
-- Use Tabelau to create our dashboard and make a powerpoint presentation
-
+- CSVs are read into dataframes using pandas and using python and pandas, all Nans & columns with “Missing” values are dropped from covid case surveillance data from the CDC government website.
+- Using matplotlib, plot graphs and pie charts and show the appropriate visualisations we want to demonstrate 
+- Using sqlalchemy library, a connection is made with the postgres SQL database(which is hosted on AWS) and cleaned datasets are loaded into tables in the database. 
+- Take the merged dataset from Postgres table, and feed it into a machine learning pipeline
+- Use Tabelau to create the dashboard 
+ 
 ### DataBase 
 After merging the data via inner join on ethnicity. The new merged dataset is stored in PostgreSQL and hosted by AWS. The schema and examples of the tables used in PostgreSQL are inclued below.
 
